@@ -1,0 +1,16 @@
+<Library>
+  <Users>
+    <User UserId="1" Role="Admin" Username="administrator" Password="admin1">
+    </User>
+    <User UserId="2" Role="User" Username="bob" Password="userBob">
+    </User>
+    <User UserId="3" Role="User" Username="alice" Password="userAlice">
+    </User>
+  </Users>
+  <Books>
+    <Book BookId="0" Title="Esempio" AuthorName="Esempio" AuthorSurname="Gessa" Publisher="Esempio" Quantity="10" />
+    <Book BookId="0" Title="" AuthorName="" AuthorSurname="" Publisher="" Quantity="0" />
+  </Books>
+  <Reservations>
+  </Reservations>
+</Library>

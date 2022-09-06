@@ -1,0 +1,18 @@
+<Library>
+  <Users>
+    <User UserId="1" Role="Admin" Username="administrator" Password="admin1" />
+    <User UserId="2" Role="User" Username="bob" Password="userBob" />
+    <User UserId="3" Role="User" Username="alice" Password="userAlice" />
+  </Users>
+  <Books>
+    <Book BookId="0" Title="Milvio" AuthorName="Ciao" AuthorSurname="Esempio" Publisher="Ciao" Quantity="1" />
+    <Book BookId="1" Title="Paperino" AuthorName="Mario" AuthorSurname="Rossi" Publisher="Esempio" Quantity="2" />
+    <Book BookId="2" Title="Paperino" AuthorName="" AuthorSurname="" Publisher="" Quantity="1" />
+    <Book BookId="3" Title="Paperino" AuthorName="Luigi" AuthorSurname="Verdi" Publisher="Esempio" Quantity="4" />
+    <Book BookId="4" Title="Franco" AuthorName="Giuseppe" AuthorSurname="Mirto" Publisher="Esempio" Quantity="6" />
+  </Books>
+  <Reservations>
+    <Reservation ReservationId="0" BookId="1" UserId="1" StartDate="7/21/2022 12:00:00 AM" EndDate="7/25/2022 12:00:00 AM" />
+    <Reservation ReservationId="1" BookId="2" UserId="1" StartDate="" EndDate="" />
+  </Reservations>
+</Library>

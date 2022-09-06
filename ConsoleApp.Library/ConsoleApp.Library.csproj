@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0ACFFEDE-546C-429F-8351-AB8C011D06CF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp.Library</RootNamespace>
+    <AssemblyName>ConsoleApp.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OptionManager\Classes\BookCreator.cs" />
+    <Compile Include="Displayer\Classes\Admin classes\ConsoleOptionDisplayerAdmin.cs" />
+    <Compile Include="Displayer\Classes\ConsoleBookViewModelDisplayer.cs" />
+    <Compile Include="Displayer\Classes\ConsoleReservationOutcomeDisplayer.cs" />
+    <Compile Include="Displayer\Classes\ConsoleReturnOutcomeDisplayer.cs" />
+    <Compile Include="Displayer\Classes\MenuDisplayer.cs" />
+    <Compile Include="Displayer\Classes\Admin classes\MenuValidatorAdmin.cs" />
+    <Compile Include="Displayer\Classes\Admin classes\OptionManagerAdmin.cs" />
+    <Compile Include="Displayer\Classes\ReservationHistoryDisplayer.cs" />
+    <Compile Include="Displayer\Classes\ConsoleDisplayer.cs" />
+    <Compile Include="Displayer\Classes\ReservationHistoryManager.cs" />
+    <Compile Include="Displayer\Classes\User classes\ConsoleOptionDisplayerUser.cs" />
+    <Compile Include="Displayer\Classes\User classes\MenuValidatorUser.cs" />
+    <Compile Include="Displayer\Classes\User classes\OptionManagerUser.cs" />
+    <Compile Include="OptionManager\Classes\BookEditor.cs" />
+    <Compile Include="OptionManager\Interfaces\IBookCreator.cs" />
+    <Compile Include="Displayer\Interfaces\IBookViewModelDisplayer.cs" />
+    <Compile Include="Displayer\Interfaces\IDisplayer.cs" />
+    <Compile Include="Displayer\Interfaces\IMenuDisplayer.cs" />
+    <Compile Include="Displayer\Interfaces\IOptionDisplayer.cs" />
+    <Compile Include="Displayer\Interfaces\IMenuValidator.cs" />
+    <Compile Include="Displayer\Interfaces\IOptionManager.cs" />
+    <Compile Include="Displayer\Interfaces\IReservationHistoryDisplayer.cs" />
+    <Compile Include="Displayer\Interfaces\IReservationHistoryManager.cs" />
+    <Compile Include="Displayer\Interfaces\IReservationOutcomeDisplayer.cs" />
+    <Compile Include="Logger\Classes\ConsoleMessageLogger.cs" />
+    <Compile Include="Logger\Classes\ConsoleLoginLogger.cs" />
+    <Compile Include="Logger\Interfaces\IMessageLogger.cs" />
+    <Compile Include="Logger\Interfaces\ILoginLogger.cs" />
+    <Compile Include="ObjectComposer\Classes\ConsoleBookComposerForReservation.cs" />
+    <Compile Include="ObjectComposer\Classes\ConsoleBookComposerForUpdate.cs" />
+    <Compile Include="ObjectValidator\Classes\BookValidator.cs" />
+    <Compile Include="ObjectValidator\Classes\BookValidatorForUpdate.cs" />
+    <Compile Include="ObjectValidator\Interfaces\IObjectValidator.cs" />
+    <Compile Include="ObjectComposer\Classes\ConsoleBookComposerForInsert.cs" />
+    <Compile Include="ObjectComposer\Interfaces\IObjectComposer.cs" />
+    <Compile Include="OptionManager\Classes\BookDeleter.cs" />
+    <Compile Include="OptionManager\Classes\BookReserver.cs" />
+    <Compile Include="OptionManager\Classes\BookReturner.cs" />
+    <Compile Include="OptionManager\Interfaces\IBookDeleter.cs" />
+    <Compile Include="OptionManager\Interfaces\IBookEditor.cs" />
+    <Compile Include="OptionManager\Interfaces\IBookReserver.cs" />
+    <Compile Include="OptionManager\Interfaces\IBookReturner.cs" />
+    <Compile Include="ParametersRequester\Classes\BookFilter.cs" />
+    <Compile Include="ParametersRequester\Classes\ConsoleBookFilterOptionalParameters.cs" />
+    <Compile Include="ParametersRequester\Classes\ConsoleReservationFilter.cs" />
+    <Compile Include="ParametersRequester\Classes\FilterRequesterAdmin.cs" />
+    <Compile Include="ParametersRequester\Classes\FilterRequesterUser.cs" />
+    <Compile Include="ParametersRequester\Classes\ConsoleMandatoryParameterRequester.cs" />
+    <Compile Include="ParametersRequester\Classes\StatusFilter.cs" />
+    <Compile Include="ParametersRequester\Interfaces\IBookFilter.cs" />
+    <Compile Include="ParametersRequester\Interfaces\IBookFilterOptionalParameters.cs" />
+    <Compile Include="ParametersRequester\Interfaces\IFilterRequester.cs" />
+    <Compile Include="ParametersRequester\Interfaces\IMandatoryParameterRequester.cs" />
+    <Compile Include="ParametersRequester\Interfaces\IReservationFilter.cs" />
+    <Compile Include="ParametersRequester\Interfaces\IStatusFilter.cs" />
+    <Compile Include="ParametersRequester\Interfaces\IUsernameFilter.cs" />
+    <Compile Include="ParametersRequester\Classes\UsernameFilter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic.Library\BusinessLogic.Library.csproj">
+      <Project>{f130de58-806b-4ede-8eed-4dcd011926d6}</Project>
+      <Name>BusinessLogic.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model.Library\Model.Library.csproj">
+      <Project>{047b2f72-7be1-4962-844a-c8381a0e3ce9}</Project>
+      <Name>Model.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

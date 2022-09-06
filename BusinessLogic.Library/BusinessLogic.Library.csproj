@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F130DE58-806B-4EDE-8EED-4DCD011926D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessLogic.Library</RootNamespace>
+    <AssemblyName>BusinessLogic.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\BookAdder.cs" />
+    <Compile Include="Classes\BookDeleter.cs" />
+    <Compile Include="Classes\BookGettableByProperties.cs" />
+    <Compile Include="Classes\BookReserver.cs" />
+    <Compile Include="Classes\BookReturner.cs" />
+    <Compile Include="Classes\BookSearcher.cs" />
+    <Compile Include="Classes\BookSearcherWithAvailabilityInfo.cs" />
+    <Compile Include="Classes\BookUpdater.cs" />
+    <Compile Include="Classes\FirstIndexFinder.cs" />
+    <Compile Include="Classes\IsBookExistingChecker.cs" />
+    <Compile Include="Classes\IsUpdatedBookDuplicateChecker.cs" />
+    <Compile Include="Classes\Logger.cs" />
+    <Compile Include="Classes\ReservationHistoryGetter.cs" />
+    <Compile Include="Classes\UserGetterByUsername.cs" />
+    <Compile Include="Exceptions\ReservationsStillActiveException.cs" />
+    <Compile Include="ILibraryBusinessLogic.cs" />
+    <Compile Include="Interfaces\IBookAdder.cs" />
+    <Compile Include="Interfaces\IBookDeleter.cs" />
+    <Compile Include="Interfaces\IBookGettableByProperties.cs" />
+    <Compile Include="Interfaces\IBookReserver.cs" />
+    <Compile Include="Interfaces\IBookReturner.cs" />
+    <Compile Include="Interfaces\IBookSearcher.cs" />
+    <Compile Include="Interfaces\IBookSearcherWithAvailabilityInfo.cs" />
+    <Compile Include="Interfaces\IBookUpdater.cs" />
+    <Compile Include="Interfaces\IFirstIndexFinder.cs" />
+    <Compile Include="Interfaces\IIsBookExistingChecker.cs" />
+    <Compile Include="Interfaces\IIsUpdatedBookDuplicateChecker.cs" />
+    <Compile Include="Interfaces\ILogger.cs" />
+    <Compile Include="Interfaces\IReservationHistoryGetter.cs" />
+    <Compile Include="Interfaces\IUserGetterByUsername.cs" />
+    <Compile Include="LibraryBusinessLogic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer.Library\DataAccessLayer.Library.csproj">
+      <Project>{53d29e24-d83d-4de2-9f45-f3ba42750375}</Project>
+      <Name>DataAccessLayer.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model.Library\Model.Library.csproj">
+      <Project>{047b2f72-7be1-4962-844a-c8381a0e3ce9}</Project>
+      <Name>Model.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

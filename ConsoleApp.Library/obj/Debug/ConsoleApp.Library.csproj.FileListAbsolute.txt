@@ -1,0 +1,15 @@
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\bin\Debug\ConsoleApp.Library.exe.config
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\bin\Debug\ConsoleApp.Library.exe
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\bin\Debug\ConsoleApp.Library.pdb
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\bin\Debug\BusinessLogic.Library.dll
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\bin\Debug\Model.Library.dll
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\bin\Debug\DataAccessLayer.Library.dll
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\bin\Debug\BusinessLogic.Library.pdb
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\bin\Debug\Model.Library.pdb
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\bin\Debug\DataAccessLayer.Library.pdb
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\obj\Debug\ConsoleApp.Library.csproj.AssemblyReference.cache
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\obj\Debug\ConsoleApp.Library.csproj.SuggestedBindingRedirects.cache
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\obj\Debug\ConsoleApp.Library.csproj.CoreCompileInputs.cache
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\obj\Debug\ConsoleApp.Library.csproj.CopyComplete
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\obj\Debug\ConsoleApp.Library.exe
+C:\Users\simone.pusceddu\source\repos\Solution.Library\ConsoleApp.Library\obj\Debug\ConsoleApp.Library.pdb
